@@ -1,0 +1,178 @@
+/* Body 스타일 정의: 학습을 위해 기본값을 다 적어둚 */
+body {
+  font-family: Arial, sans-serif; /* 전체 페이지에 적용되는 기본 폰트 설정, 기본값: varies (브라우저마다 다름) */
+  margin: 0; /* 페이지의 기본 여백 제거, 기본값: 8px (브라우저마다 다를 수 있음) */
+  padding: 0; /* 페이지의 기본 패딩 제거, 기본값: 0 */
+  background-color: #f5f5f5; /* 페이지 배경색을 밝은 회색으로 설정, 기본값: transparent */
+  color: black; /* 텍스트 기본 색상, 기본값: black */
+  line-height: normal; /* 텍스트 줄 간격, 기본값: normal */
+}
+
+/* 헤더 스타일 정의 */
+.header {
+  background-color: #2db400; /* 헤더 배경색을 초록색으로 설정 */
+  padding: 10px 20px; /* 헤더 내부 여백 설정, 기본값: 0 */
+  display: flex; /* 플렉스박스를 사용하여 헤더 내 요소들을 정렬, 기본값: block */
+  justify-content: flex-start; /* 헤더 내 요소들을 왼쪽 정렬, 기본값: flex-start */
+  align-items: center; /* 헤더 내 요소들을 수직 가운데 정렬, 기본값: stretch */
+  color: white; /* 헤더 내 텍스트 색상을 흰색으로 설정, 기본값: inherit (상위 요소로부터 상속) */
+  font-size: 16px; /* 폰트 크기 설정, 기본값: 16px */
+  font-weight: normal; /* 폰트 굵기 설정, 기본값: normal */
+}
+
+/* 로고 스타일 정의 */
+.header .logo {
+  font-size: 36px; /* 로고의 폰트 크기를 36px로 설정 */
+  font-weight: bold; /* 로고 텍스트를 굵게 설정, 기본값: normal */
+}
+
+/* 검색창 컨테이너 스타일 정의 */
+.search-bar {
+  flex: 1; /* 검색창이 가능한 넓은 공간을 차지하도록 설정, 기본값: 0 1 auto */
+  margin: 0 20px; /* 검색창 좌우에 20px의 여백 추가, 기본값: 0 */
+  position: relative; /* 버튼을 검색창 내부에 배치하기 위해 설정, 기본값: static */
+}
+
+/* 검색창 입력 필드 스타일 정의 */
+.search-bar input[type="text"] {
+  width: 100%; /* 검색창 너비를 100%로 설정하여 가득 채움, 기본값: auto */
+  padding: 10px; /* 검색창 내부 여백 설정, 기본값: varies (브라우저마다 다름) */
+  border-radius: 20px; /* 검색창 모서리를 둥글게 설정, 기본값: 0 */
+  border: none; /* 검색창 테두리 제거, 기본값: depends on browser */
+  box-sizing: border-box; /* 패딩 포함하여 너비 계산, 기본값: content-box */
+  font-size: 16px; /* 폰트 크기 설정, 기본값: 16px */
+  color: black; /* 텍스트 색상 설정, 기본값: black */
+  background-color: white; /* 배경색 설정, 기본값: white */
+}
+
+/* 버튼의 스타일을 정의합니다 */
+.header .search-bar button {
+  position: absolute; /* 버튼을 검색창 내부에 위치시키기 위해 설정, 기본값: static */
+  right: 0; /* 버튼을 검색창의 오른쪽에 배치, 기본값: auto */
+  top: 0; /* 버튼을 검색창의 상단에 맞춤, 기본값: auto */
+  bottom: 0; /* 버튼을 검색창의 하단에 맞춤, 기본값: auto */
+  padding: 0 15px; /* 버튼의 좌우 여백 설정, 기본값: 0 */
+  background-color: #228b22; /* 버튼의 배경색을 파란색으로 설정, 기본값: transparent */
+  color: white; /* 버튼의 글자 색상을 흰색으로 설정, 기본값: black */
+  border: none; /* 버튼 테두리 제거, 기본값: depends on browser */
+  border-radius: 0 20px 20px 0; /* 버튼의 오른쪽 모서리 둥글게 설정, 기본값: 0 */
+  cursor: pointer; /* 마우스 포인터를 버튼 위에 있을 때 포인터로 변경, 기본값: auto */
+  font-size: 16px; /* 버튼의 폰트 크기 설정, 기본값: 16px */
+}
+
+/* 버튼에 마우스를 올렸을 때의 스타일을 정의합니다 */
+.header .search-bar button:hover {
+  background-color: #32cd32; /* 배경색을 진한 파란색으로 변경, 기본값: none */
+}
+
+/* .nav-bar 클래스: 네비게이션 바의 전체 스타일을 정의 */
+.nav-bar {
+  background-color: white; /* 배경색을 흰색으로 설정, 기본값: transparent */
+  padding: 10px 20px; /* 상하 패딩 10px, 좌우 패딩 20px, 기본값: 0 */
+  display: flex; /* 자식 요소들을 플렉스 박스로 배치, 기본값: block */
+  justify-content: space-around; /* 자식 요소들을 균등하게 배치, 기본값: flex-start */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과를 추가하여 바를 떠보이게 함 */
+}
+
+/* .nav-bar a 클래스: 네비게이션 바의 링크 스타일을 정의 */
+.nav-bar a {
+  color: #333; /* 링크 텍스트 색상을 어두운 회색(#333)으로 설정, 기본값: depends on browser */
+  text-decoration: none; /* 링크의 밑줄을 제거, 기본값: underline */
+  padding: 10px; /* 링크 텍스트 주변에 10px의 패딩을 추가, 기본값: 0 */
+  transition: background-color 0.3s; /* 배경색 변경 시 0.3초 동안 부드럽게 전환되도록 설정, 기본값: none */
+  font-weight: bold; /* 글씨체 굵게, 기본값: normal */
+  font-size: 20px; /* 글씨 크기, 기본값: 16px */
+}
+
+/* .nav-bar a:hover 클래스: 링크에 마우스를 올렸을 때의 스타일을 정의 */
+.nav-bar a:hover {
+  background-color: #f0f0f0; /* 배경색을 연한 회색(#f0f0f0)으로 변경, 기본값: transparent */
+  border-radius: 5px; /* 링크의 모서리를 둥글게(5px) 만듦, 기본값: 0 */
+}
+
+/* 메인 콘텐츠 영역의 스타일을 정의합니다 */
+.main-content {
+  display: grid; /* 그리드 레이아웃을 사용하여 자식 요소들을 배치, 기본값: block */
+  grid-template-columns: 1fr 1fr; /* 두 개의 동일한 크기의 열로 레이아웃 설정 */
+  grid-template-rows: auto auto; /* 자동으로 두 개의 행으로 레이아웃 설정 */
+  gap: 20px; /* 그리드 항목들 간의 간격 설정, 기본값: 0 */
+  padding: 20px; /* 내부 여백을 20px로 설정, 기본값: 0 */
+}
+
+/* 섹션 스타일을 정의합니다 */
+.section {
+  background-color: white; /* 배경색을 흰색으로 설정, 기본값: transparent */
+  padding: 20px; /* 내부 여백을 20px로 설정, 기본값: 0 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과를 추가하여 깊이감을 줌, 기본값: none */
+  border-radius: 10px; /* 모서리를 둥글게 설정, 기본값: 0 */
+}
+
+/* 왼쪽 상단 섹션의 스타일을 정의합니다 */
+.section-left-top {
+  grid-column: 1 / 2; /* 그리드의 첫 번째 열에 위치, 기본값: auto */
+  grid-row: 1 / 3; /* 그리드의 첫 번째 행부터 두 번째 행까지 차지, 기본값: auto */
+}
+
+/* 오른쪽 상단 섹션의 스타일을 정의합니다 */
+.section-right-top {
+  grid-column: 2 / 3; /* 그리드의 두 번째 열에 위치, 기본값: auto */
+  grid-row: 1 / 2; /* 그리드의 첫 번째 행에 위치, 기본값: auto */
+}
+
+/* 하단 섹션의 스타일을 정의합니다 */
+.section-bottom {
+  grid-column: 2 / 3; /* 그리드의 두 번째 열에 위치, 기본값: auto */
+  grid-row: 2 / 3; /* 그리드의 두 번째 행에 위치, 기본값: auto */
+}
+
+/* 제목 요소(h1, h2)의 스타일을 정의합니다 */
+h1,
+h2 {
+  margin-top: 0; /* 상단 여백을 제거하여 요소가 부모 요소와 밀착되도록 설정, 기본값: varies (브라우저마다 다름) */
+  margin-bottom: 20px; /* 하단 여백을 추가하여 요소 간 간격을 만듦, 기본값: varies (브라우저마다 다름) */
+  font-weight: bold; /* 텍스트를 굵게 표시, 기본값: bold (h1), normal (h2) */
+  font-size: 2em; /* 폰트 크기 설정, 기본값: 2em (h1), 1.5em (h2) */
+}
+
+/* 버튼 스타일을 정의합니다 */
+.button {
+  display: inline-block; /* 인라인 블록 요소로 설정, 기본값: inline */
+  margin-top: 20px; /* 상단 여백을 20px로 설정, 기본값: 0 */
+  padding: 10px 20px; /* 상하 10px, 좌우 20px 패딩 설정, 기본값: 0 */
+  background-color: #007bff; /* 버튼 배경색을 파란색으로 설정, 기본값: transparent */
+  color: white; /* 버튼 텍스트 색상을 흰색으로 설정, 기본값: varies (브라우저마다 다름) */
+  text-decoration: none; /* 텍스트 밑줄을 제거, 기본값: underline */
+  border-radius: 5px; /* 모서리를 둥글게 설정, 기본값: 0 */
+  border: none; /* 버튼 테두리 제거, 기본값: varies (브라우저마다 다름) */
+  cursor: pointer; /* 마우스를 버튼 위로 올렸을 때 커서가 포인터로 변경되도록 설정, 기본값: auto */
+  font-size: 16px; /* 폰트 크기 설정, 기본값: 16px */
+}
+
+/* 버튼에 마우스를 올렸을 때의 스타일을 정의합니다 */
+.button:hover {
+  background-color: #0056b3; /* 버튼 배경색을 진한 파란색으로 변경, 기본값: none */
+}
+
+/* 목록의 스타일을 정의합니다 */
+ul {
+  list-style: none; /* 목록 스타일을 제거 (기본 불릿 제거), 기본값: disc (unordered list), decimal (ordered list) */
+  padding: 0; /* 내부 여백을 제거, 기본값: varies (브라우저마다 다름) */
+  margin: 0; /* 외부 여백을 제거, 기본값: varies (브라우저마다 다름) */
+}
+
+/* 목록 항목(li)의 스타일을 정의합니다 */
+ul li {
+  margin: 10px 0; /* 항목 간 간격을 10px로 설정, 기본값: 0 */
+  font-size: 16px; /* 폰트 크기 설정, 기본값: 16px */
+}
+
+/*
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+*/
